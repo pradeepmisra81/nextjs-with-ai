@@ -1,8 +1,10 @@
 import '@styles/globals.css'
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
   title: 'nextjs-with-ai',
-  description: 'Discour & Share AI prompts'
+  description: 'Finance & Wealth'
 }
 
 const RootLayout = ({ children }) => {
@@ -13,6 +15,7 @@ const RootLayout = ({ children }) => {
           <div className='gradient'></div>
         </div>
         <main className='app'>
+          <Nav />
           {children}
         </main>
       </body>
